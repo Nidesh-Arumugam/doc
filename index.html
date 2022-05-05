@@ -29,38 +29,36 @@
    padding: 0;
 }
 </style>
-
-
-<div className="survey-preview-section">
-                <div className="survey-preview-inner-section">
-                  <div className="case-demographic-information">
-                    <h5 className="rich-editor-subheader">Patient Demographic Information</h5>
-                    <div>
-                      <p><span className="demographic-title">Patient Name: </span>{this.state.patientInfo?.name}</p>
-                      <p><span className="demographic-title">DOB: </span>{this.state.patientInfo?.dob}</p>
-                      <p><span className="demographic-title">Age: </span>{this.state.patientInfo?.age}</p>
-                      <p><span className="demographic-title">Gender: </span>{this.state.patientInfo?.gender}</p>
-                      { /* <p><span className="demographic-title">Diagnosis: </span>{this.state.patientInfo?.diagnosis}</p> */}
-                    </div>
-                  </div>
-                  <h5 className='rich-editor-subheader'>SYNOPSIS</h5>
-                  <div className="comments-section ql-editor">
-                    {this.state.previewSynopsis?ReactHtmlParser(this.state.previewSynopsis):''}
-                  </div>
-                  <h5 className='rich-editor-subheader'>RECOMMENDATIONS</h5>
-                  <div className="comments-section ql-editor">
-                    {this.state.previewRecommendation?ReactHtmlParser(this.state.previewRecommendation):""}
-                  </div>
-                  <h5 className='rich-editor-subheader'>CLINICAL TRIAL RECOMMENDATIONS</h5>
-                  <div className="comments-section ql-editor">
-                    {this.state.previewTrials?ReactHtmlParser(this.state.previewTrials):''}
-                  </div>
-                  <h5 className='rich-editor-subheader'>REFERENCES</h5>
-                  <div className="comments-section ql-editor">
-                    {this.state.previewReference?ReactHtmlParser(this.state.previewReference):''}
-                    </div>
-                    </div>
-                  </div>
+<div class="survey-preview-section">
+    <div class="survey-preview-inner-section">
+      <div class="case-demographic-information">
+        <h5 class="rich-editor-subheader">Patient Demographic Information</h5>
+        <div>
+          <p><span class="demographic-title">Patient Name: </span>{this.state.patientInfo?.name}</p>
+          <p><span class="demographic-title">DOB: </span>{this.state.patientInfo?.dob}</p>
+          <p><span class="demographic-title">Age: </span>{this.state.patientInfo?.age}</p>
+          <p><span class="demographic-title">Gender: </span>{this.state.patientInfo?.gender}</p>
+          { /* <p><span class="demographic-title">Diagnosis: </span>{this.state.patientInfo?.diagnosis}</p> */}
+        </div>
+      </div>
+      <h5 class='rich-editor-subheader'>SYNOPSIS</h5>
+      <div class="comments-section ql-editor">
+        {this.state.previewSynopsis?ReactHtmlParser(this.state.previewSynopsis):''}
+      </div>
+      <h5 class='rich-editor-subheader'>RECOMMENDATIONS</h5>
+      <div class="comments-section ql-editor">
+        {this.state.previewRecommendation?ReactHtmlParser(this.state.previewRecommendation):""}
+      </div>
+      <h5 class='rich-editor-subheader'>CLINICAL TRIAL RECOMMENDATIONS</h5>
+      <div class="comments-section ql-editor">
+        {this.state.previewTrials?ReactHtmlParser(this.state.previewTrials):''}
+      </div>
+      <h5 class='rich-editor-subheader'>REFERENCES</h5>
+      <div class="comments-section ql-editor">
+        {this.state.previewReference?ReactHtmlParser(this.state.previewReference):''}
+        </div>
+        </div>
+      </div>
 <p>No style specified <span width="10" style="color: rgb(235, 107, 86);">[span with color]</span> no style</p>
 <p><span style="background-color: rgb(251, 160, 38);">Background color in RGB</span></p>
 <p><span style="background-color: #f39e65;">Background color in Hex</span></p>
